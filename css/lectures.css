@@ -1,0 +1,207 @@
+@import url('styles.css');
+
+/* Start Category Style */
+
+.catpath {
+	margin-top: 120px;
+}
+
+.catpath .pathGrp {
+	padding: 10px;
+	margin: 50px auto 50px;
+	background: #FFFFFF;
+	border: 1px solid #e0e0e0;
+	border-right: 5px solid #3498db;
+}
+
+.catpath .pathGrp span {
+	font-family: 'Droid';
+	font-size: 15px;
+	font-weight: bold;
+	color: #333333
+}
+
+.catpath .pathGrp span.cat a,
+.catpath .pathGrp span.catname a {
+	color: #3498db
+}
+
+/* End Category Style */
+
+
+/* Start lectures Style */
+
+.lectBox .lect {
+	display: block;
+	width: 100%;
+	height: 120px;
+	background: #FFFFFF;
+	border: 1px solid #e0e0e0;
+	/*border-right: 5px solid #3498db;*/
+	box-shadow: 0px 1px 3px rgba(204, 204, 204, 0.7);
+	position: relative;
+	border-radius: 5px;
+	margin: 5px auto 15px;
+	overflow: hidden;
+}
+
+.lectBox .lect .time {
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 70px;
+	height: 100%;
+	background: #3498db;
+	color: #FFFFFF;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow: hidden;
+}
+
+.lectBox .lect .time span:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    right: 26px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Droid';
+    font-size: 18px;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.lectBox .lect .time span:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    right: 36px;
+    width: 163%;
+    height: 100%;
+    font-family: 'Droid';
+    font-size: 18px;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.lectBox .lect .titLect {
+	position: absolute;
+    top: 0;
+    right: 70px;
+    height: 100%;
+    padding: 10px;
+}
+
+.lectBox .lect .titLect > h4 {
+    font-family: 'Droid';
+    font-size: 22px;
+    color: #333333;
+    margin-top: 28px;
+}
+/* End lectures Style */
+
+
+/* Start Pagination Style */
+.pageBox {
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.pageBox .nextBox,
+.pageBox .prevBox,
+.pageBox .linksGrp {
+	display: inline-block;
+}
+
+.pageBox .nextBox a,
+.pageBox .prevBox a,
+.pageBox .linksGrp a{
+	display: inline-block;
+	font-size: 18px;
+	font-family: arial;
+	padding: 15px;
+	background: #FFFFFF;
+	color: #333333;
+	border: 1px solid #e0e0e0;
+	margin-right: -1px; 
+}
+
+.pageBox .nextBox a:after {
+	content: '\f105';
+	font-style: normal;
+	font-family: FontAwesome
+}
+
+.pageBox .prevBox a:after {
+	content: '\f104';
+	font-style: normal;
+	font-family: FontAwesome
+}
+/* End Pagination Style */
+
+
+
+@media(min-width: 0px) and (max-width: 450px) {
+
+	.catpath > .container,
+	.lectBox > .container {
+		padding: 15px 20px 0;
+	}
+
+	.lectBox .lect {
+		margin-top: 10px;
+	}
+
+	.lectBox .lect .time span:nth-child(1),
+	.lectBox .lect .time span:nth-child(2) {
+		font-size: 15px;
+	}
+
+
+
+	.lectBox .lect .titLect > h4 {
+	    font-size: 13px;
+	    margin-top: 0; 
+	}
+
+	.pageBox .nextBox a,
+	.pageBox .prevBox a,
+	.pageBox .linksGrp a{
+		font-size: 13px;
+		padding: 10px;
+
+	}
+
+}
+
+
+@media(min-width: 451px) and (max-width: 767px) {
+
+	.catpath > .container,
+	.lectBox > .container {
+		padding: 15px 20px 0;
+	}
+
+	.lectBox .lect {
+		margin-top: 10px;
+	}
+
+	.lectBox .lect .time span:nth-child(1),
+	.lectBox .lect .time span:nth-child(2) {
+		font-size: 17px;
+	}
+
+	.lectBox .lect .titLect > h4 {
+	    font-size: 18px;
+	    margin-top: 0
+	}
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+
+    .lectBox .lect {
+    	margin-top: 50px
+    }
+
+	.lectBox .lect .titLect > h4 {
+	    margin-top: 0
+	}
+}

@@ -1,0 +1,10 @@
+RewriteEngine on
+RewriteRule ^lectures/([0-9a-zA-Z]+)$ lectures.php?cat=$1 [NC,L]
+RewriteRule ^register$ register.php [NC,L]
+RewriteRule ^error$ error.php [NC,L]
+RewriteRule ^logout$ logout.php [NC,L]
+ErrorDocument 404 /error.php
+IndexIgnore *
+
+
+

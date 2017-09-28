@@ -1,0 +1,131 @@
+@import url('styles.css');
+@import url('lectures.css');
+
+/* Start Lecture Box Style */
+
+.catpath {
+	margin-top: 60px;
+}
+
+.lectureBox .lecture {
+	padding: 30px;
+	background: #FFFFFF;
+	border: 1px solid #e0e0e0;
+	overflow: hidden;
+	margin-bottom: 100px;
+}
+
+.lectureBox .lecture .titleLecture {
+	border: 1px solid #e0e0e0;
+	border-right: 4px solid #3498db;
+	margin-bottom: 40px;
+	padding: 15px;
+	background: #efefef
+}
+
+.lectureBox .lecture .titleLecture h3 {
+	font-family: 'Droid';
+	font-size: 20px;
+	margin-bottom: 10px;
+	color: #333
+}
+
+.lectureBox .lecture .titleLecture .timePosting {
+	font-family: arial;
+	font-size: 18px;
+	color: #333
+}
+
+.lectureBox .lecture .titleLecture .timePosting span:nth-child(1) {
+	font-family: 'Droid';
+	font-size: 17px;
+}
+
+.lectureBox .lecture .descLecture {
+	width: 90%;
+	line-height: 32px;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+.lectureBox .lecture .descLecture p {
+	font-family: 'Noto';
+	font-size: 20px;
+	color: #5a5a5a
+}
+
+.lectureBox .lecture .imglecture {
+	width: 75%;
+	margin-bottom: 100px;
+}
+
+.lectureBox .lecture .imglecture img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 50px;
+}
+/* End Lecture Box Style */
+
+@media(min-width: 0px) and (max-width: 450px) {
+
+	.lectureBox > .container {
+		padding: 15px 20px 0;
+	}
+
+	.lectureBox .lecture {
+		margin-top: 10px;
+	}
+
+    .lectureBox .lecture .titleLecture {
+    	margin-bottom: 30px;
+    }
+
+	.lectureBox .lecture .titleLecture h3 {
+		font-size: 16px;
+		margin-bottom: 6px;
+	}
+
+	.lectureBox .lecture .titleLecture .timePosting {
+		font-size: 14px;
+	}
+
+	.lectureBox .lecture .titleLecture .timePosting:nth-child(1) {
+		font-size: 13px;
+	}
+
+	.lectureBox .lecture .descLecture {
+		width: 100%;
+		padding: 15px;
+		text-align: center
+	}
+
+    .lectureBox .lecture .descLecture p {
+    	font-size: 17px
+    }
+
+    .lectureBox .lecture .imglecture {
+    	margin: 0 auto 50px;
+    }
+}
+
+@media(min-width: 451px) and (max-width: 767px) {
+
+
+	.lectureBox > .container {
+		padding: 15px 20px 0;
+	}
+
+	.lectureBox .lecture {
+		margin-top: 10px;
+	}
+
+	.lectureBox .lecture .descLecture {
+		width: 90%;
+		margin: 0 auto 50px;
+	}
+
+    .lectureBox .lecture .imglecture {
+    	margin: 0 auto 50px;
+    }	
+
+}

@@ -1,0 +1,107 @@
+/* Media Queries */
+
+@media(min-width: 0px) and (max-width: 450px) {
+
+   .header {
+    position: relative
+   }
+
+   .header .container .logo {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+   }
+
+   .header .container .logo h2 {
+    font-size: 22px;
+   }
+
+  .header .container .ctrl {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+   .contents {
+    margin-top: 50px;
+   }
+
+   .container {
+     width: 100%;
+     padding: 10px;
+   }
+
+   .contents .row {
+    width: 100%
+   }
+
+   .contBox {
+     width: 100%
+   }
+
+   .header .logfrm {
+    width: 90%;
+    top: 150px;
+    left: 5%;
+   }
+
+   .header .logfrm:after {
+    right: 110px;
+   }
+
+   .header .logfrm .iptGrp input {
+    display: block;
+   }
+
+   .header .logfrm .iptGrp input[type="text"],
+   .header .logfrm .iptGrp input[type="password"],
+   .header .logfrm .iptGrp input[type="submit"] {
+    width: 95%;
+    margin: 5px auto 0;
+   } 
+
+   .header .logfrm .iptGrp .fb_login {
+    width: 95%
+   }
+}
+
+@media(min-width: 451px) and (max-width: 767px) { 
+
+   .header .container .logo h2 {
+     font-size: 20px;
+   }
+
+   .container {
+     width: 100%;
+     padding: 10px;
+   }
+
+   .contents .row {
+    width: 100%
+   }
+
+   .contBox {
+     width: 50%
+   }
+}
+
+@media(min-width: 768px) and (max-width: 992px){
+   .container {
+    width: 90%;
+   }
+}
+
+@media(min-width: 993px) and (max-width: 1199px) {
+  .container {
+    width: 90%;
+  }
+}
+
+/*
+ 
+  1200
+  992
+  768
+
+*/

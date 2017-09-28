@@ -1,0 +1,418 @@
+
+.cpanelBox {
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding-top: 50px;
+	width: 250px;
+	height: 100%;
+	z-index: 50;
+	background: #131A1E;
+	text-align: center;
+	overflow: auto;
+}
+
+.cpanelBox .cpanelList {
+	width: 100%;
+}
+
+.cpanelBox .cpanelList .adminBox {
+	padding: 45px 45px 30px;
+}
+
+.cpanelBox .cpanelList .adminBox img {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 0 auto 10px;
+	border-radius: 50%;
+	border: 3px solid #f3f0f0;
+}
+
+.cpanelBox .cpanelList .adminBox h3 {
+	padding-top: 10px;
+}
+
+.cpanelBox .cpanelList .adminBox h3 a {
+	font-family: 'Cairo';
+	font-size: 22px;
+	font-style: normal;
+	color: #F2F2F2
+}
+
+.cpanelBox .cpanelList .lists li{
+	width: 100%;
+	padding: 15px;
+	font-family: 'Droid';
+	font-size: 17px;
+	background: #131A1E;
+	color: #F2F2F2;
+	cursor: pointer;
+	transition: all 0.6s ease;
+	-webkit-user-select: none;
+}
+
+.cpanelBox .cpanelList .lists li:hover {
+	color: #FFFFFF;
+	background: #1b252b
+}
+
+.cpcontents {
+	width: 82%;
+	margin-top: 90px;
+	margin-right: 18%;
+	padding: 10px;
+}
+
+.cpcontents .maingroup {
+	width: 85%;
+	margin: auto;
+}
+
+.cpcontents .maininfo {
+	padding: 30px;
+	overflow: hidden;
+}
+
+.cpcontents .maininfo div {
+	float: right;
+	width: 31.3333%;
+	margin-left: 10px;
+}
+
+.cpcontents .maininfo div:nth-child(1) {
+	background: #269e59;
+	border-bottom: 5px solid #318052;
+}
+
+.cpcontents .maininfo div:nth-child(2) {
+	background: #2980b9;
+	border-bottom: 5px solid #236fa0;
+}
+
+.cpcontents .maininfo div:nth-child(3) {
+	background: #E22211;
+	border-bottom: 5px solid #b72316;
+}
+
+.cpcontents .maininfo div h2 {
+	font-family: 'Noto';
+	font-size: 90px;
+	font-weight: normal;
+	padding: 0px 30px;
+	color: #FFFFFF
+}
+
+.cpcontents .maininfo div p {
+	font-family: 'Droid';
+	font-size: 20px;
+	padding: 0px 5px 10px;
+	color: #FFFFFF
+}
+
+.varcontent {
+	padding: 10px 110px 0 0;
+	overflow: auto;
+	transition: all 0.5s ease
+}
+
+.varcontent .mainparent {
+	width: 85.5%;
+	padding: 15px;
+	background: #FFFFFF;
+	border: 1px solid #e0e0e0;
+}
+
+.varcontent .mainparent .titlecontent {
+	padding: 10px;
+	border: 1px solid #e0e0e0;
+	border-right: 4px solid #3498db;
+	background: #efefef;
+}
+
+.varcontent .mainparent .titlecontent h3 {
+	font-family: 'Droid';
+	font-size: 16px;
+	color: #333333
+}
+
+.varcontent .mainparent .addLecture .groupinputs {
+	padding: 50px 0 0;
+	width: 70%
+}
+
+.varcontent .mainparent .addLecture .groupinputs p{
+	width: 100%;
+}
+
+.varcontent .mainparent .addLecture .groupinputs p > input[type='text'],
+.varcontent .mainparent .addLecture .groupinputs p > .filecover,
+.varcontent .mainparent .addLecture .groupinputs p > select {
+	display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 7px;
+    background: #f7f7f7;
+    border: 1px solid rgba(88, 88, 88, 0.1);
+	border-right: 4px solid #3498db;
+    font-family: 'Droid';
+    font-size: 15px;
+    position: relative
+}
+
+.varcontent .mainparent .addLecture .groupinputs p > .filecover {
+	margin-top: 3px;
+	padding: 0;
+	cursor: pointer
+}
+
+.varcontent .mainparent .addLecture .groupinputs p input[type='file'] {
+	opacity: 0;
+	position: relative;
+	right: 0;
+	top: 0;
+	width: 100%;
+	padding: 15px;
+	z-index: 51;
+	cursor: pointer
+}
+
+.varcontent .mainparent .addLecture .groupinputs p > .filecover .fileBtn {
+	position: absolute;
+    right: 7px;
+    top: 8px;
+    padding: 7px;
+    border-radius: 3px;
+    font-family: 'Noto';
+    background: #3498db;
+    color: #FFFFFF;
+    border: none;
+    font-size: 16px;
+    z-index: 50;
+	cursor: pointer
+}
+
+.varcontent .mainparent .addLecture .groupinputs p > .filecover .showvalue {
+	position: absolute;
+    padding: 10px;
+    width: 83%;
+    top: 8px;
+    right: 86px;
+    border: none;
+    background: #f7f7f7;
+    color: #333333;
+    font-size: 15px;
+	cursor: pointer
+}
+
+.varcontent .mainparent .addLecture .groupinputs p textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    margin-top: 7px;
+    background: #f7f7f7;
+    border: 1px solid rgba(88, 88, 88, 0.1);
+	border-right: 4px solid #3498db;
+    font-family: 'Droid';
+    font-size: 15px;
+    resize: none
+}
+
+.varcontent .mainparent .addLecture .groupinputs p input[type='submit'],
+.varcontent .mainparent .addLecture .groupinputs p input[type='button'] {
+    width: 30%;
+    padding: 14px;
+    background: #3498db;
+    font-family: 'Droid';
+    font-size: 15px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+
+}
+
+.varcontent .mainparent .addLecture .groupinputs p input[type='button'] {
+	background: #E22211
+}
+
+.userspanel,
+.managerspanel,
+.adminspanel {
+	margin-top: 40px;
+
+}
+
+.userspanel .user,
+.managerspanel .manager,
+.adminspanel .admin {
+	display: inline-block;
+	width: 147px;
+	height: 250px;
+	background: #FFFFFF;
+	border-radius: 3px;
+    border-top: 8px solid #FFFFFF;
+    border-right: 8px solid #FFFFFF;
+    border-left: 8px solid #FFFFFF;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 2);
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 15px;
+}
+
+.userspanel .user img,
+.managerspanel .manager img,
+.adminspanel .admin img {
+	display: block;
+	width: 100%;
+	height: 130px;
+	margin: auto;
+	border: none
+}
+
+.userspanel .user h4,
+.managerspanel .manager h4,
+.adminspanel .admin h4 {
+	margin-top: 5px;
+	font-family: 'Droid', arial;
+	font-size: 18px;
+	color: #333333
+}
+
+.userspanel .user span,
+.managerspanel .manager span,
+.adminspanel .admin span {
+	display: block;
+	font-size: 16px;
+	font-family: 'Noto';
+	color: #333333;
+}
+
+.managerspanel .manager .manprofile,
+.adminspanel .admin .manprofile {
+	position: absolute;
+	right: -8px;
+	bottom: 0;
+	width: 112%;
+	padding: 10px;
+	border: none;
+	color: #FFFFFF;
+	font-family: 'Noto';
+    border-bottom-right-radius: 5px;
+	background: #E22211;
+    box-shadow: 0 0px 3px #E22211;
+	cursor: pointer;
+}
+
+.userspanel .user .manprofile {
+	position: absolute;
+	right: -8px;
+	bottom: 0;
+	width: 112%;
+	padding: 10px;
+	border: none;
+	color: #FFFFFF;
+	font-family: 'Noto';
+    border-bottom-right-radius: 5px;
+	background: #E22211;
+    box-shadow: 0 0px 3px #E22211;
+	cursor: pointer;
+}
+
+.userspanel .user button:first-of-type:before,
+.managerspanel .manager button:first-of-type:before,
+.adminspanel .admin button:first-of-type:before {
+	content: '\f014';
+	font-style: normal;
+	font-family: 'FontAwesome';
+	margin-left: 5px;
+}
+
+.lecturesadmin {
+	margin-top: 50px;
+}
+
+.lecturesadmin .searchcat {
+	padding: 10px 0px;
+}
+
+.lecturesadmin .searchcat select {
+	width: 200px;
+	padding: 10px;
+	background: #efefef;
+    border: 1px solid #e0e0e0;
+    border-right: 3px solid #3498db;
+    font-size: 12px;
+    font-family: 'Droid'
+
+}
+
+.lecturesadmin .lectgroupadmin {
+	position: relative;
+	overflow: hidden;
+	margin-top: 10px;
+}
+
+.lecturesadmin .lectgroupadmin .lect {
+	display: inline-block;
+    width: 99%;
+    padding-left: 165px;
+	background: #FFFFFF;
+	border: 1px solid #e2e2e2;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.lecturesadmin .lectgroupadmin .lect div {
+	float: right;
+}
+
+.lecturesadmin .lectgroupadmin .lect .time {
+	width: 24.5%;
+	padding: 9px;
+	color: #FFFFFF;
+	font-family: 'Droid';
+	background: #3498db
+}
+
+.lecturesadmin .lectgroupadmin .lect .titLect {
+	width: 75.5%;
+	padding: 9px;
+	color: #333333;
+	font-family: 'Droid';
+	max-height: 39px;
+}
+
+.lecturesadmin .lectgroupadmin .btnsCtrl {
+    display: inline-block;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    width: 20%;
+}
+
+.lecturesadmin .lectgroupadmin .btnsCtrl button {
+	width: 48%;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	font-family: 'Noto';
+	font-size: 16px;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.lecturesadmin .lectgroupadmin .btnsCtrl button:nth-child(1) {
+	background: #E22211;
+}
+
+.lecturesadmin .lectgroupadmin .btnsCtrl button:nth-child(2) {
+	background: #3498db
+}
+
+
+.loading i {
+	font-size: 30px;
+	color: #3498db
+}

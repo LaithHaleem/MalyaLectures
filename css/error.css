@@ -1,0 +1,17 @@
+.errorpageBox {
+	padding: 10px;
+	margin-top: 100px;
+	text-align: center;
+}
+
+.errorpageBox .imgBox{
+    width: 350px;
+    height: 350px;
+    margin: auto;
+
+}
+
+.errorpageBox .imgBox img {
+	width: 100%;
+	height: 100%
+}

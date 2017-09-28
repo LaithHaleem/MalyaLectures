@@ -1,0 +1,473 @@
+@import url('styles.css');
+
+.profile {
+   padding: 10px;
+   margin: 100px auto 0;
+   border-right: 3px;
+}
+
+.profile .profImgBox {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	margin: auto;
+	background: transparent;
+	border-radius: 50%;
+	border: 7px solid #FFFFFF;
+	overflow: hidden;
+	cursor: pointer;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+.profile .profImgBox:after {
+	content: "\f030";
+	font-style: normal;
+	font-family: "FontAwesome";
+	position: absolute;
+	color: #fdfcfc;
+	font-size: 160%;
+	top: 44%;
+	left: 43%;
+	z-index: 800;
+	display: none
+}
+
+.profile .profImgBox:hover:after {
+	display: inline;
+}
+
+.profile .profImgBox input[type=file] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 900;
+	opacity: 0;
+	cursor: pointer
+}
+
+.profile .profImgBox img {
+	width: 100%;
+	height: 100%
+}
+
+.profile .studentName {
+	padding: 15px;
+}
+
+.profile .studentName h2 {
+	font-family: 'Droid', arial;
+	font-size: 22px;
+	color: #333333
+}
+
+.contentsuser {
+	width: 70%;
+	margin: auto;
+	background: #FFFFFF;
+	border: 1px solid #e0e0e0;
+	overflow: hidden
+}
+
+.contentsuser > .navsCtrl {
+    float: right;
+    width: 70%;
+}
+
+.contentsuser > .rankuser {
+	float: right;
+	width: 30%;
+}
+
+.contentsuser .navsCtrl div,
+.contentsuser .navsCtrl a{
+	display: inline-block;
+	padding: 15px 15px;
+	font-family: 'Droid';
+	font-size: 15px;
+	color: #333333;
+	cursor: pointer;
+	transition: color 0.4s ease;
+	-webkit-user-select: none;
+}
+
+.contentsuser .navsCtrl div:hover,
+.contentsuser .navsCtrl a:hover {
+	color: #3498db;
+}
+
+.contentsuser .navsCtrl div:nth-child(1):before {
+	content: '\f02d';
+	font-style: normal;
+	font-family: 'FontAwesome';
+	margin-left: 5px;
+}
+
+.contentsuser .navsCtrl div:nth-child(2):before {
+	content: '\f044';
+	font-style: normal;
+	font-family: 'FontAwesome';
+	margin-left: 5px;
+}
+
+.contentsuser .navsCtrl a:before {
+	content: '\f1de';
+	font-style: normal;
+	font-family: 'FontAwesome';
+	margin-left: 5px;
+}
+
+.contentsuser .rankuser {
+	direction: ltr;
+	padding-left: 15px;
+	line-height: 57px
+}
+
+.contentsuser .rankuser span {
+	display: inline-block;
+	font-family: 'Droid';
+	font-size: 13px;
+}
+
+.contentsuser .dashcontents {
+	padding: 15px;
+	margin-top: 60px;
+	position: relative;
+}
+
+.contentsuser .dashcontents .lect {
+	display: block;
+	width: 100%;
+	height: 80px;
+	background: #FFFFFF;
+	border: 1px solid #e0e0e0;	
+	position: relative;
+	border-radius: 5px;
+	margin: 50px auto 15px;
+	overflow: hidden;
+}
+
+.contentsuser .dashcontents .lect .time {
+	position: relative;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 100%;
+	background: #3498db;
+	color: #FFFFFF;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	overflow: hidden;
+}
+
+.contentsuser .dashcontents .lect .time span:nth-child(1) {
+    position: absolute;
+    top: 0px;
+    right: 14px;
+    width: 100%;
+    height: 100%;
+    font-family: 'Droid';
+    font-size: 13px;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.contentsuser .dashcontents .lect .time span:nth-child(2) {
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    width: 163%;
+    height: 100%;
+    font-family: 'Droid';
+    font-size: 13px;
+    text-align: center;
+    transform: rotate(90deg);
+}
+
+.contentsuser .dashcontents .lect .titLect {
+	position: absolute;
+    top: 0;
+    right: 70px;
+    height: 100%;
+    padding: 10px;
+}
+
+.contentsuser .dashcontents .lect .titLect > h4 {
+    font-family: 'Droid';
+    font-size: 17px;
+    color: #333333;
+    margin-top: 12px;
+}
+
+.contentsuser .dashcontents .edituser {
+	width: 100%;
+	margin-top: 60px;
+}
+
+.contentsuser .dashcontents .edituser .form {
+	width: 70%;
+	padding: 10px;
+}
+
+.contentsuser .dashcontents .edituser .form input {
+	width: 100%;
+	padding: 15px;
+	margin-top: 7px;
+	background: #f7f7f7;
+	border: 1px solid rgba(88, 88, 88, 0.1);
+	border-right: 5px solid #3498db;
+	font-family: 'Droid', arial;
+	font-size: 15px;
+}
+
+.contentsuser .dashcontents .edituser .form .editBtn {
+	width: 30%;
+	padding: 15px;
+	background: #3498db;
+	font-family: 'Droid';
+	font-size: 15px;
+	border: none;
+	margin-top: 10px;
+	cursor: pointer;
+	color: #FFFFFF
+}
+
+.loading {
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+	position: absolute;
+	top: 40%;
+	left: 0
+}
+
+.loading i {
+	font-size: 30px;
+	color: #3498db
+}
+
+.loading:after {
+	content: '';
+}
+
+.active {
+	background: #3498db;
+	color: #FFFFFF !important
+}
+
+@media(min-width: 0px) and (max-width: 450px) {
+
+	.profile {
+		margin-top: 30px; 
+	}
+
+	.profile .profImgBox {
+		width: 145px;
+		height: 145px;
+	}
+
+	.profile .studentName h2 {
+		font-size: 18px;
+	}
+
+	.contentsuser {
+		width: 100%;
+	}
+
+	.contentsuser > .navsCtrl,
+	.contentsuser > .rankuser {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.contentsuser .navsCtrl {
+		margin-top: 5px;
+	}
+
+    .contentsuser .navsCtrl div,
+	.contentsuser .navsCtrl a {
+		padding: 10px 10px;
+		font-size: 10px;
+	}
+
+	.contentsuser .rankuser {
+		padding-left: 0;
+		line-height: 40px
+	}
+
+	.contentsuser .rankuser span {
+		font-size: 10px;
+	}
+	.contentsuser .dashcontents .lect {
+		margin-top: 5px;
+	}
+
+
+	.contentsuser .dashcontents .lect .titLect {
+	    padding: 2px;
+	}
+
+	.contentsuser .dashcontents .lect .titLect > h4 {
+	    font-size: 10px;
+	    margin-top: 0px;
+	}
+
+	.contentsuser .dashcontents .edituser {
+		margin-top: 30px;
+	}
+
+	.contentsuser .dashcontents .edituser .form {
+		width: 100%;
+		margin: auto;
+		padding: 0;
+	}
+
+	.contentsuser .dashcontents .edituser .form input {
+		padding: 7px;
+		font-size: 12px;
+		border-right: 3px solid #3498db
+	}
+
+	.contentsuser .dashcontents .edituser .form .editBtn {
+		width: 100%;
+		padding: 7px;
+		font-size: 12px;
+	}
+
+}
+
+
+@media(min-width: 451px) and (max-width: 767px) {
+
+	.profile {
+		margin-top: 100px; 
+	}
+
+	.profile .profImgBox {
+		width: 180px;
+		height: 180px;
+	}
+
+	.profile .studentName h2 {
+		font-size: 20px;
+	}
+
+	.contentsuser > .navsCtrl,
+	.contentsuser > .rankuser {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.contentsuser .navsCtrl {
+		margin-top: 5px;
+	}
+
+    .contentsuser .navsCtrl div,
+	.contentsuser .navsCtrl a {
+		padding: 10px 10px;
+		font-size: 14px;
+	}
+
+	.contentsuser .rankuser {
+		padding-left: 0;
+		line-height: 40px
+	}
+
+	.contentsuser .rankuser span {
+		font-size: 14px;
+	}
+	.contentsuser .dashcontents .lect {
+		margin-top: 5px;
+	}
+
+	.contentsuser .dashcontents .lect .titLect {
+	    padding: 5px;
+	}
+
+	.contentsuser .dashcontents .lect .titLect > h4 {
+	    font-size: 14px;
+	    margin-top: 0px;
+	}
+
+	.contentsuser .dashcontents .edituser {
+		margin-top: 50px;
+	}
+
+	.contentsuser .dashcontents .edituser .form {
+		width: 100%;
+		margin: auto;
+		padding: 0;
+	}
+
+	.contentsuser .dashcontents .edituser .form input {
+		padding: 10px;
+		font-size: 13px;
+		border-right: 4px solid #3498db
+	}
+
+	.contentsuser .dashcontents .edituser .form .editBtn {
+		width: 100%;
+		padding: 10px;
+		font-size: 13px;
+	}
+
+}
+
+@media(min-width: 768px) and (max-width: 992px) {
+
+	.contentsuser .navsCtrl {
+		margin-top: 10px;
+	}
+
+    .contentsuser .navsCtrl div,
+	.contentsuser .navsCtrl a {
+		padding: 10px 10px;
+		font-size: 13px;
+	}
+
+	.contentsuser > .rankuser {
+		width: 30%
+	}
+
+	.contentsuser > .navsCtrl {
+		width: 70%
+	}
+
+	.contentsuser .dashcontents .lect .titLect {
+	    padding: 5px;
+	}
+
+	.contentsuser .dashcontents .lect .titLect > h4 {
+	    font-size: 17px;
+	    margin-top: 0px;
+	}
+
+	.contentsuser .dashcontents .edituser {
+		margin-top: 100px;
+	}
+
+	.contentsuser .dashcontents .edituser .form {
+		width: 100%;
+		margin: auto;
+		padding: 0;
+	}
+
+	.contentsuser .dashcontents .edituser .form input {
+		padding: 12px;
+		font-size: 15px;
+		border-right: 5px solid #3498db
+	}
+
+	.contentsuser .dashcontents .edituser .form .editBtn {
+		width: 100%;
+		padding: 12px;
+		font-size: 15px;
+	}
+
+} 
+
+
+
